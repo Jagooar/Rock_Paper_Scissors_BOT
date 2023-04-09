@@ -1,16 +1,9 @@
-import functions
-from data import my_dict
-from classes import *
+from environs import Env
 
 
-print ('This is executable file')
+env = Env()
+env.read_env()
 
-new_variable: int = 15
+bot_token = env('BOT_TOKEN')
 
-
-if __name__ == '__main__':
-    print('The code below will fail if this file is an import module in another executable')
-    print(functions.get_dubble_number(100))
-    print(my_dict)
-    MyClass()
-    print(dir())
+print(bot_token)
