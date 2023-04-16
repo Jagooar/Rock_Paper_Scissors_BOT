@@ -18,9 +18,9 @@ yes_no_kb = yes_no_kb_builder.as_markup(
 
 button_1: KeyboardButton = KeyboardButton(text=LEXICON_RU['rock'])
 button_2: KeyboardButton = KeyboardButton(text=LEXICON_RU['scissors'])
-button_3: KeyboardButton = KeyboardButton(text=LEXICON_RU['papar'])
+button_3: KeyboardButton = KeyboardButton(text=LEXICON_RU['paper'])
 
-gamr_kb: ReplyKeyboardMarkup = ReplyKeyboardMarkup(
+game_kb: ReplyKeyboardMarkup = ReplyKeyboardMarkup(
     keyboard=[[button_1],
               [button_2],
               [button_3]],
